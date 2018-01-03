@@ -1,0 +1,155 @@
+{
+	"info": {
+		"name": "team-manager",
+		"_postman_id": "eb1a132b-f5ee-a796-04ac-409af3d17631",
+		"description": "CRUD api for team-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Team",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8000/team/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"team",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Team Member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": \"1\",\n    \"first_name\": \"efw\",\n    \"last_name\": \"efw\",\n    \"phone_number\": \"+3838383838\",\n    \"email\": \"b@a.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/team/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"team",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Team Member",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": \"1\",\n    \"first_name\": \"efw\",\n    \"last_name\": \"efw\",\n    \"phone_number\": \"+3838383838\",\n    \"email\": \"jjj@a.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/team/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"team",
+						"1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Team Member",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": \"1\",\n    \"first_name\": \"efw\",\n    \"last_name\": \"efw\",\n    \"phone_number\": \"+3838383838\",\n    \"email\": \"a@a.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/team/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"team",
+						"1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Team Member (Patch)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": \"1\",\n    \"first_name\": \"efw\",\n    \"last_name\": \"efw\",\n    \"phone_number\": \"+38383837838\",\n    \"email\": \"jofwjfoj@a.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/team/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"team",
+						"2",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
